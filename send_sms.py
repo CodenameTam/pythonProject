@@ -27,8 +27,8 @@ in_the_bag_quotes = [
 ]
 
 def send_message(quotes_list=in_the_bag_quotes):
-    account_sid = 'ACe1eb7ad13f36b117c7d73153954a1f68'
-    auth_token = 'cec40077b8bacf3ed75ebc2b8644c8ef'
+    account_sid = 'TWILIO_ACCOUNT_SID'
+    auth_token = 'TWILIO_AUTH_TOKEN'
     client = Client(account_sid, auth_token)
     quote = quotes_list[random.randint(0, len(quotes_list) - 1)]
 
